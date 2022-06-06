@@ -5,6 +5,8 @@ ENV GH_REPO=""
 ENV GOVER=1.17.7
 ENV CSVER=4.4.0
 
+RUN dnf install dumb-init
+
 #Installing NVM
 SHELL ["/bin/bash", "--login", "-c"]
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
