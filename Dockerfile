@@ -20,6 +20,6 @@ RUN curl -O https://storage.googleapis.com/golang/go$GOVER.linux-amd64.tar.gz \
  && sudo mv go /usr/local
 
 RUN curl -fOL https://github.com/coder/code-server/releases/download/v$CSVER/code-server-$CSVER-amd64.rpm \
- && sudo rpm -i code-server-$CSVER-amd64.rpm
+ && sudo rpm -i code-server-$CSVER-amd64.rpm \
  && sudo systemctl enable --now code-server@root
 # Now visit http://127.0.0.1:8080. Your password is in ~/.config/code-server/config.yaml
