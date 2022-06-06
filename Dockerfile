@@ -14,6 +14,6 @@ RUN nvm install --lts
 #Installing golang
 WORKDIR /tmp/
 RUN curl -O https://storage.googleapis.com/golang/go$GOVER.linux-amd64.tar.gz \
- && tar -xvf go$GOVER.linux-amd64.tar.gz \
+ && tar -xf go$GOVER.linux-amd64.tar.gz \
  && sudo chown -R root:root ./go \
  && sudo mv go /usr/local
