@@ -7,7 +7,7 @@ ENV GH_REPO=""
 ENV GOVER=1.17.7
 ENV CSVER=4.4.0
 
-RUN dnf install dumb-init git tzdata -y
+RUN dnf install dumb-init git -y
 
 #Installing NVM
 SHELL ["/bin/bash", "--login", "-c"]
