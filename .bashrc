@@ -1,3 +1,5 @@
+PS1='\[\e[0m\]\u\[\e[0m\][\[\e[0m\]\A\[\e[0m\]]\[\e[0m\]~ \[\e[0m\]'
+
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
