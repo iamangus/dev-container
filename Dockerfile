@@ -1,5 +1,7 @@
 FROM fedora:latest
 
+ENV TZ="America/Chicago"
+
 ENV GH_TOKEN=""
 ENV GH_REPO=""
 ENV GOVER=1.17.7
